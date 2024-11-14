@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ayosehat">
+
+    <!-- Izin yang diperlukan -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- Aplikasi -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AyoSehat">
+
+        <!-- Main Activity (Tampilan Utama) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Activity Menu Makanan Sehat -->
+        <activity
+            android:name=".ActivityHealthyFood"
+            android:label="Menu Makanan Sehat"
+            android:exported="false"/>
+
+        <!-- Activity Pola Tidur Sehat -->
+        <activity
+            android:name=".ActivitySleepPattern"
+            android:label="Pola Tidur Sehat"
+            android:exported="false"/>
+
+        <!-- Activity Jadwal Olahraga -->
+        <activity
+            android:name=".ActivityWorkoutSchedule"
+            android:label="Jadwal Olahraga"
+            android:exported="false"/>
+
+    </application>
+</manifest>
